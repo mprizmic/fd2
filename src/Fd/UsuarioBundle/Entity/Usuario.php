@@ -44,7 +44,7 @@ class Usuario implements UserInterface {
     private $email;
 
     /**
-     * @ORM\Column(length=100)
+     * @ORM\Column(length=100, unique=true)
      * @Assert\NotBlank(message="No puede dejar el usuario en vacío")
      */
     private $nombre_usuario;
