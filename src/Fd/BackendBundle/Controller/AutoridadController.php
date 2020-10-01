@@ -177,7 +177,7 @@ class AutoridadController extends Controller {
      *
      * @Route("/new", name="backend.autoridad.new")
      */
-    public function newAction() {
+    public function newAction(Request $request) {
         $entity = new Autoridad();
         $form = $this->createForm(new AutoridadType(), $entity);
 

@@ -37,6 +37,11 @@ class AutoridadType extends AbstractType {
                     'attr' => array('class' => 'input_talle_4'),
                     'help' => 'Un email válido',
                 ))
+                ->add('email_personal', 'email', array(
+                    'required' => false,
+                    'attr' => array('class' => 'input_talle_4'),
+                    'help' => 'Un email válido',
+                ))                
         ;
         $factory = $builder->getFormFactory();
 

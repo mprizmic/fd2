@@ -49,6 +49,12 @@ class Autoridad
      * @Assert\Email(message="El email no es válido")
      */
     private $email;
+    
+    /**
+     * @ORM\Column(length=50, nullable=true)
+     * @Assert\Email(message="El email no es válido")
+     */
+    private $email_personal;    
 
     /**
      * bidireccional lado propietario
@@ -219,7 +225,28 @@ class Autoridad
     {
         return $this->email;
     }
+    /**
+     * Set email
+     *
+     * @param string $email_personal
+     * @return Autoridad
+     */
+    public function setEmailPersonal($emailPersonal)
+    {
+        $this->email_personal = emailPersonal;
 
+        return $this;
+    }
+
+    /**
+     * Get email_personal
+     *
+     * @return string 
+     */
+    public function getEmailPersonal()
+    {
+        return $this->email_personal;
+    }
     /**
      * Set inicio_mandato
      *
