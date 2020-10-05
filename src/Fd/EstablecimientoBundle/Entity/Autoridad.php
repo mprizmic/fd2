@@ -228,12 +228,12 @@ class Autoridad
     /**
      * Set email
      *
-     * @param string $email_personal
+     * @param string $emailPersonal
      * @return Autoridad
      */
     public function setEmailPersonal($emailPersonal)
     {
-        $this->email_personal = emailPersonal;
+        $this->email_personal = $emailPersonal;
 
         return $this;
     }
