@@ -260,6 +260,7 @@ class EstablecimientoController extends Controller {
                     $cargos[$key_pe]['autoridad']['te_particular'] = ($existe) ? $autoridad->getTeParticular() : $existe;
                     $cargos[$key_pe]['autoridad']['celular'] = ($existe) ? $autoridad->getCelular() : $existe;
                     $cargos[$key_pe]['autoridad']['email'] = ($existe) ? $autoridad->getEmail() : $existe;
+                    $cargos[$key_pe]['autoridad']['email_personal'] = ($existe) ? $autoridad->getEmailPersonal() : $existe;
                 }
 
                 $agenda[$key_oi]['plantel'] = $cargos;

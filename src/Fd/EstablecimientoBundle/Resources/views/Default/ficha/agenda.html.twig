@@ -36,7 +36,7 @@ requiere el array agenda tal como está formateado por el controller
                     </td>
                     <td>{{ uncargo['autoridad']['te_particular']| default('--') }}</td>
                     <td>{{ uncargo['autoridad']['celular']| default('--') }}</td>
-                    <td>{{ uncargo['autoridad']['email']| default('--') }}</td>
+                    <td>{{ uncargo['autoridad']['email'] | default('--') ~ ' / ' ~ uncargo['autoridad']['email_personal'] | default('--') }}</td>
 
                 </tr>
 
@@ -52,7 +52,7 @@ requiere el array agenda tal como está formateado por el controller
                     </td>
                     <td>{{ uncargo['autoridad']['te_particular'] }}</td>
                     <td>{{ uncargo['autoridad']['celular'] }}</td>
-                    <td>{{ uncargo['autoridad']['email'] }}</td>
+                    <td>{{ uncargo['autoridad']['email'] | default('--') ~ ' / ' ~ uncargo['autoridad']['email_personal'] | default('--') }}</td>
                 </tr>    
             {% endif %}
         {% endfor %}
