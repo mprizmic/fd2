@@ -23,6 +23,9 @@
     <th>
         Email
     </th>
+    <th>
+        Email personal
+    </th>    
 {% for rector in rectores %}
     <tr>
         <td>
@@ -40,6 +43,9 @@
         <td>
             <span>{{ rector.email }}</span>
         </td>
+        <td>
+            <span>{{ rector.email_personal }}</span>
+        </td>        
     </tr>
 {% endfor %}
 
