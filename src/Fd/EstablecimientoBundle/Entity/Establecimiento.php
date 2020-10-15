@@ -82,7 +82,12 @@ class Establecimiento {
      * @ORM\Column(name="descripcion", type="string", length=15, nullable=true)
      */
     private $descripcion;
-
+    /**
+     * @var string $area
+     *
+     * @ORM\Column(name="area", type="string", length=10, nullable=true)
+     */
+    private $area;
     /**
      * @ORM\Column(type="string", length=10, nullable=true)        
      * La longitud se la chequea en isFecha
@@ -532,6 +537,26 @@ class Establecimiento {
      */
     public function getDescripcion() {
         return $this->descripcion;
+    }
+   /**
+     * Set area
+     *
+     * @param string $area
+     * @return Establecimiento
+     */
+    public function setArea($area) {
+        $this->area = $area;
+
+        return $this;
+    }
+
+    /**
+     * Get area
+     *
+     * @return string 
+     */
+    public function getArea() {
+        return $this->area;
     }
 
     /**

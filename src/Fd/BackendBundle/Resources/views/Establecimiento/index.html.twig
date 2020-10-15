@@ -17,6 +17,7 @@
                 <th>Id</th>
                 <th>Cue</th>
                 <th>Nombre</th>
+                <th>Área</th>                
                 <th></th>
                 <th>Acciones</th>
             </tr>
@@ -28,6 +29,7 @@
                     <td>{{ entity.cue }}</td>
                     <td><a href="{{ path('backend_establecimiento_edit', { 'id': entity.id }) }}">{{ entity.nombre }}</a></td>
                     <td>{{ entity.apodo }}</td>
+                    <td>{{ entity.area }}</td>
                     <td>
                         <a href="{{ path('backend_establecimiento_edit', { 'id': entity.id }) }}">
                             Editar
