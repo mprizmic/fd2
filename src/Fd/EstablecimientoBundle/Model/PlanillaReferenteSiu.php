@@ -36,7 +36,7 @@ class PlanillaReferenteSiu extends PlanillaDeCalculo {
             $posicion->setCellValue($columna . $fila, $fila - $this->fila_inicio_datos );
             
             ++$columna;
-            $posicion->setCellValue($columna . $fila, $e->getNombre() . $anexo );
+            $posicion->setCellValue($columna . $fila, $e->getApodo() . $anexo );
             
             ++$columna;
             $posicion->setCellValue($columna . $fila, $ee->getReferenteSga());                                      
