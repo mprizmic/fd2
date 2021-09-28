@@ -1,12 +1,12 @@
 
 lun 27 sep 2021 19:30:00 -03
 
-si aplico lo de los stash estoy para hacer un commit y volver todo a como estaba pero andando, por que no toque lo de las autoridades.
+luego empiezo a aplicar lo que esta en los stash
+si aplico lo de los stash estoy para hacer un commit y volver todo a como estaba pero andando, 
+por que no toque lo de las autoridades.
 Si anda local luego hay que pasarlo a la nube
 
-luego empiezo a aplicar lo que esta en los stash pero no anda
-
-parado en la rama nueva traigo de rel5 los archivos de a uno y llego hasta tag v6.0 de rel5. no commiteo
+parado en la rama nueva traigo de rel5 los archivos de a uno y llego hasta tag v6.0 de rel5. Commiteo
 no traje autoridadrepository ni listado_rector
 en el medio queda la rama combo_de_inspector y referente_siol
 

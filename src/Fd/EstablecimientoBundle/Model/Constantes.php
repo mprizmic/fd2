@@ -4,9 +4,9 @@ namespace Fd\EstablecimientoBundle\Model;
 
 class Constantes {
 
-    const NOMBRE = 'Sistema de Información de la Dirección de Formación Docente';
+    const NOMBRE = 'Sistema de Información de la Dirección de Escuelas Normales Superiores';
     const NOMBRE_CORTO = 'DFD';
-    const VERSION_LOGICA = 'Versión 5.1 - 16/09/2020';
+    const VERSION_LOGICA = 'Versión 6.0 - 08/09/2021';
     const CREDITOS = 'Créditos: Marcelo Prizmic';
     const VERSION_SYMFONY = 'Symfony 2.1.13';
     const VERSION_DOCTRINE = 'Doctrine >=2.2.3,<2.5-dev';
@@ -34,7 +34,7 @@ class Constantes {
     public $TELEFONOS = array(
         array(
             'oficina' => 'Secretaría Privada',
-            'te' => '4320-0400 interno 1160',
+            'te' => '6067-6000 interno 1160',
         ),
     );
     
