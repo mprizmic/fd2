@@ -1,0 +1,49 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Area
+{% endblock %}
+
+{% block main_content %}
+    {{ parent() }}
+
+    <div class="titulo">Area</div>
+
+    <fieldset>
+        <table class="record_properties">
+            <tbody>
+                <tr>
+                    <th>Id: </th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>Código: </th>
+                    <td>{{ entity.codigo }}</td>
+                </tr>
+                <tr>
+                    <th>Descripción: </th>
+                    <td>{{ entity.descripcion }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <br />
+
+    <div>
+        <form action="{{ path('backend.area.delete', { 'id': entity.id }) }}" method="post">
+            <a class="separador" href="{{ path('backend.area.edit', { 'id': entity.id }) }}">Editar</a>
+
+            <div class="invisible">
+                {{ form_widget(delete_form) }}
+            </div>
+
+            <button class ="separador boton_rojo" type="submit" >Eliminar</button>
+
+            <a class="separador" href="{{ path('backend.area') }}">Volver a la lista</a>
+        </form>
+    </div>
+
+    {% include '::includes/volver.html.twig' %}
+
+{% endblock %}

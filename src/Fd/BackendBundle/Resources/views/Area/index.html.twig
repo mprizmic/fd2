@@ -1,0 +1,44 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Lista de Areas
+{% endblock %}
+
+{% block main_content %}
+
+    {% set area = 'Area' %}
+
+    <div class="titulo">Lista de áreas</div>
+
+    <div class="boton_verde float_derecha">
+        <a href="{{ path('backend.area.new') }}">
+            Crear nuevo {{ area | lower }}
+        </a>
+    </div>
+    <span class="limpiar_float"></span>
+
+    <br />
+    
+    <table class="grilla">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entity in entities %}
+                <tr>
+                    <td>{{ entity.codigo }}</td>
+                    <td>{{ entity.descripcion }}</td>
+                    <td><a href="{{ path('backend.area.edit', { 'id': entity.id }) }}">Editar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% include '::includes/volver.html.twig' %}
+
+{% endblock %}
+

@@ -1,0 +1,31 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Editar Área
+{% endblock %}
+
+{% block main_content %}
+    {{ parent() }}
+
+    <div class="titulo">Editar un área</div>
+
+    <form action="{{ path('backend.area.update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+        <div class="ancho_10">
+            {{ form_widget(edit_form) }}
+        </div>
+        <p class="separador">
+            <button type="submit">Guardar</button>
+        </p>
+    </form>
+
+    <form action="{{ path('backend.area.delete', { 'id': entity.id }) }}" method="post">
+        <div class="invisible">
+            {{ form_widget(delete_form) }}
+        </div>
+        <button class="separador boton_rojo" type="submit" >Eliminar</button>
+        <a class="separador" href="{{ path('backend.area') }}">Volver a la lista</a>
+        <a class="separador" href="{{ path('backend.area.new') }}">Crear nueva área</a>
+    </form>
+
+    <br />
+{% endblock %}

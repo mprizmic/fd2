@@ -83,12 +83,6 @@ class Establecimiento {
      */
     private $descripcion;
     /**
-     * @var string $area
-     *
-     * @ORM\Column(name="area", type="string", length=10, nullable=true)
-     */
-    private $area;
-    /**
      * @ORM\Column(type="string", length=10, nullable=true)        
      * La longitud se la chequea en isFecha
      */
@@ -124,6 +118,14 @@ class Establecimiento {
      * })
      */
     private $sector;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="Fd\EstablecimientoBundle\Entity\Area")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="area_id", referencedColumnName="id")
+     * })
+     */
+    private $area;
 
     /**
      * bidireccional lado inverso
@@ -541,10 +543,10 @@ class Establecimiento {
    /**
      * Set area
      *
-     * @param string $area
+     * @param \Fd\EstablecimientoBundle\Entity\Area $area
      * @return Establecimiento
      */
-    public function setArea($area) {
+    public function setArea(\Fd\EstablecimientoBundle\Entity\Area $area) {
         $this->area = $area;
 
         return $this;

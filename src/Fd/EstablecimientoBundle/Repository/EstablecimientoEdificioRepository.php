@@ -68,7 +68,8 @@ class EstablecimientoEdificioRepository extends EntityRepository implements Dato
     public function qbAllOrdenado() {
         $qb = $this->createQueryBuilder('ee')
                 ->innerJoin('ee.establecimientos', 'e')
-                ->orderBy('e.orden', 'ASC')
+                ->orderBy('e.area', 'ASC')
+                ->addOrderBy('e.orden', 'ASC')
                 ->addOrderBy('ee.cue_anexo', 'ASC');
         return $qb;
     }

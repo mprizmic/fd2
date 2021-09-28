@@ -1,0 +1,25 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Crear Area
+{% endblock %}
+
+{% block main_content %}
+    {{ parent() }}
+
+    <div class="titulo">Crear nueva área </div>
+
+    <form action="{{ path('backend.area.create') }}" method="post" {{ form_enctype(form) }}>
+        <div class="ancho_10">
+            {{ form_widget(form) }}
+        </div>
+        <div>
+            <button type="submit">Crear</button>
+            <a class="separador" href="{{ path('backend.area') }}">
+                Volver a la lista
+            </a>
+        </div>
+    </form>
+
+    <br />
+{% endblock %}

@@ -14,6 +14,7 @@ class PortadaType extends AbstractType
             ->add('tabla')
             ->add('descripcion')
             ->add('url')
+            ->add('etiqueta')
         ;
     }
 

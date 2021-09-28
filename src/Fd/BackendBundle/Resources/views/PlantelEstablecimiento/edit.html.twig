@@ -6,7 +6,7 @@
     <div class="titulo">Editar un cargo de una dependencia de un establecimiento</div>
 
     <form action="{{ path('backend.plantelestablecimiento.update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
-        <div class="ancho_10">
+        <div class="ancho_15">
             {{ form_row(edit_form.establecimiento) }}
             {{ form_row(edit_form.organizacion) }}
             {{ form_row(edit_form.cargo) }}

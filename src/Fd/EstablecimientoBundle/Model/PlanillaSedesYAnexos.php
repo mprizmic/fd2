@@ -11,6 +11,7 @@ class PlanillaSedesYAnexos extends PlanillaDeCalculo {
     protected function cargaDatos($datos, $em) {
 
         $encabezado[] = '#';
+        $encabezado[] = 'Área';
         $encabezado[] = 'Establecimiento';
         $encabezado[] = 'CUE';
         $encabezado[] = 'Domicilio';
@@ -54,6 +55,9 @@ class PlanillaSedesYAnexos extends PlanillaDeCalculo {
             $columna = 'A';
             $posicion->setCellValue($columna . $fila, $fila - $this->fila_inicio_datos );
             
+            ++$columna;
+            $posicion->setCellValue($columna . $fila, $e->getArea());
+
             ++$columna;
             $posicion->setCellValue($columna . $fila, $e->getNombre() . $anexo );
             
