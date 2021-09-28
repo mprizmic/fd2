@@ -56,7 +56,7 @@ class PlanillaSedesYAnexos extends PlanillaDeCalculo {
             $posicion->setCellValue($columna . $fila, $fila - $this->fila_inicio_datos );
             
             ++$columna;
-            $posicion->setCellValue($columna . $fila, $e->getArea());
+            $posicion->setCellValue($columna . $fila, $e->getArea()->getDescripcion());
 
             ++$columna;
             $posicion->setCellValue($columna . $fila, $e->getNombre() . $anexo );
