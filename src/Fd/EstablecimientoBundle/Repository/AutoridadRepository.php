@@ -25,6 +25,7 @@ class AutoridadRepository extends EntityRepository {
                 ->addSelect('a.celular as celular')
                 ->addSelect('a.email as email')
                 ->addSelect('a.email_personal as email_personal')
+                ->addSelect('a.comentarios as comentarios')
                 ->from('EstablecimientoBundle:Autoridad', 'a')
                 ->join('a.cargo', 'pl')
                 ->join('pl.cargo', 'cg')

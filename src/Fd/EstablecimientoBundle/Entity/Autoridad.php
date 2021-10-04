@@ -68,6 +68,11 @@ class Autoridad
      */
     private $inicio_mandato;
     /**
+     * @ORM\Column(length=250)
+     * 
+     */
+    private $comentarios;
+    /**
      * @ORM\Column(type="datetime")
      * 
      */
@@ -338,4 +343,26 @@ class Autoridad
     {
         return $this->cargo;
     }
+    /**
+     * Set comentarios
+     *
+     * @param \string $comentarios
+     * @return Autoridad
+     */
+    public function setComentarios($comentarios)
+    {
+        $this->comentarios = $comentarios;
+
+        return $this;
+    }
+
+    /**
+     * Get comentarios
+     *
+     * @return \string 
+     */
+    public function getComentarios()
+    {
+        return $this->comentarios;
+    }    
 }
