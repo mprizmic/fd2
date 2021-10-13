@@ -1,0 +1,25 @@
+{% extends 'BackendBundle::layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Crear Tipo de Formación
+{% endblock %}
+
+{% block main_content %}
+    {{ parent() }}
+    <h1>Crear nuevo tipo de formación</h1>
+
+    <form action="{{ path('backend_tipo_formacion_create') }}" method="post" {{ form_enctype(form) }}>
+        <div class="ancho_10">
+            {{ form_widget(form) }}
+        </div>
+        <div class="bloque">
+            <button class="separador" type="submit">Crear</button>
+            <a class="separador" href="{{ path('backend_tipo_formacion') }}">
+                Volver a la lista
+            </a>
+        </div>
+    </form>
+
+    <br />
+    <br />
+{% endblock %}
