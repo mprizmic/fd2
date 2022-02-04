@@ -87,7 +87,7 @@ class PlantelEstablecimientoManager {
 
             $respuesta->setCodigo(1);
             $respuesta->setMensaje('El cargo se actualizó correctamente');
-            $respuesta->setObjNuevo($entity);
+            $respuesta->setObjNuevo($plantel_establecimiento);
         } catch (Exception $e) {
             $respuesta->setCodigo(2);
             $respuesta->setMensaje('Problemas al guardar');
