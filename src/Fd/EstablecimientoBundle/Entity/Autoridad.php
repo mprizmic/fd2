@@ -68,7 +68,7 @@ class Autoridad
      */
     private $inicio_mandato;
     /**
-     * @ORM\Column(length=250)
+     * @ORM\Column(length=250, nullable=true)
      * 
      */
     private $comentarios;
