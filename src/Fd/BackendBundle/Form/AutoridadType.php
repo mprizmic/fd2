@@ -42,6 +42,11 @@ class AutoridadType extends AbstractType {
                     'attr' => array('class' => 'input_talle_4'),
                     'help' => 'Un email válido',
                 )) 
+                ->add('sade', 'text', array(
+                    'required' => false,
+                    'attr' => array('class' => 'input_talle_4'),
+                    'help' => 'Usuario de SADE',
+                ))                
                 ->add('comentarios', 'textarea', array(
                     'required' => false,
                     'attr' => array(

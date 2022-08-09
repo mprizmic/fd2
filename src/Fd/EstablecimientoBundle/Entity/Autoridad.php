@@ -73,6 +73,12 @@ class Autoridad
      */
     private $comentarios;
     /**
+     * @var string $sade
+     *
+     * @ORM\Column(length=50, nullable=true)
+     */
+    private $sade;
+    /**
      * @ORM\Column(type="datetime")
      * 
      */
@@ -365,4 +371,27 @@ class Autoridad
     {
         return $this->comentarios;
     }    
+    /**
+     * Set sade
+     *
+     * @param \string $sade
+     * @return Autoridad
+     */
+    public function setSade($sade)
+    {
+        $this->sade = $sade;
+
+        return $this;
+    }
+
+    /**
+     * Get sade
+     *
+     * @return \string 
+     */
+    public function getSade()
+    {
+        return $this->sade;
+    }    
+    
 }
