@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Fd\EstablecimientoBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
