@@ -7,7 +7,7 @@ luego entro con ssh a la nube
 desde la nube descargo lo que subí a gitlab (origin_bue)
 luego pido ca:cl
 
-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
+
 
 
 
