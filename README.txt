@@ -1,4 +1,17 @@
+23/8/22
+no puedo subir mas directamente a gitlab desde 14.04
+subo a github desde fd.local al proyecto fd2 (ogh). 
+luego de github (origin) bajo en mate 21.04 en el proyecto fd2 
+luego subo a gitlab desde 21.04 al proyecto fd_fn (origin_bue) 
+luego entro con ssh a la nube
+desde la nube descargo lo que subí a gitlab (origin_bue)
+luego pido ca:cl
 
+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
+
+
+
+*************************************
 lun 27 sep 2021 19:30:00 -03
 
 luego empiezo a aplicar lo que esta en los stash
